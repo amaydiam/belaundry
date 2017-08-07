@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/background_layout"
+        android:layout_alignBottom="@+id/alertLayout"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/alert_background"
+            android:layout_alignBottom="@+id/alertLayout"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/alertLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_apique"
+                android:layout_weight="3"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+
+            <ImageButton
+                android:id="@+id/first_star_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/star"
+                android:background="#00ffffff"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"/>
+
+            <ImageButton
+                android:id="@+id/second_star_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp" />
+            <ImageButton
+                android:id="@+id/third_star_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"/>
+            <ImageButton
+                android:id="@+id/fourth_star_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star_hole"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"/>
+            <ImageButton
+                android:id="@+id/fifth_star_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star_hole"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/alert_dialog_content"
+            android:layout_gravity="center_vertical"
+            android:text="Hi! Rio, please give the store rates also your feedback. Your feedback may be useful to the store. Thank You"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        
+        <EditText
+            android:id="@+id/reviewEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="top" />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"/>
+
+            <Button
+                android:id="@+id/alert_dialog_btn_no"
+                android:text="Submit"
+                android:textColor="@color/textIcon"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_fill_green"/>
+            <Button
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:id="@+id/alert_dialog_btn_ok"
+                android:textColor="#c3c3c3"
+                android:text="Cancel"
+                android:layout_weight="2"
+                android:background="@drawable/rounded_button_line_green"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:background="@drawable/shadow_effect"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <FrameLayout
+             android:background="#26A69A"
+             android:layout_width="0dp"
+             android:layout_weight="1.5"
+             android:layout_height="match_parent">
+           <com.akabetech.belaundryondemand.view.RoundedImageView
+               android:id="@+id/imv_logo_hist"
+               android:layout_width="75dp"
+               android:layout_height="75dp"
+               android:src="@mipmap/ic_launcher"
+               android:background="@drawable/image_circle"
+               android:layout_gravity="center_vertical|center_horizontal"
+               />
+         </FrameLayout>
+        <RelativeLayout
+            android:id="@+id/relParentHistoryContent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+                <!-- date -->
+                <FrameLayout
+                    android:id="@+id/fr_layout_store"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="start"
+                            android:id="@+id/store_name_history"
+                            android:text="store google"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content" />
+                    <TextView
+                        android:gravity="right"
+                        android:layout_gravity="end"
+                        android:id="@+id/store_date_history"
+                        android:text="20 aug 2016"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/label_ph_number"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/textNoActive"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/tvPhoneNumberHistory"
+                    android:text="{Store_phone}"
+                    android:layout_below="@id/label_ph_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/historyStuffTotal"
+                            android:text="4kg"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/historyStatus"
+                        android:text="Done"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

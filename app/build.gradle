@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.1'
+    defaultConfig {
+        applicationId 'com.akabetech.belaundryondemand'
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 8
+        versionName "02.06.2017.1." + versionCode
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            // shrinkResources true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    ext {
+        supportLibVersion = '25.3.1'
+    }
+    compile "com.android.support:cardview-v7:${supportLibVersion}"
+    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    compile "com.android.support:design:${supportLibVersion}"
+    compile "com.android.support:support-v4:${supportLibVersion}"
+    compile "com.android.support:recyclerview-v7:${supportLibVersion}"
+    //    compile 'com.google.android.gms:play-services-places:10.2.4'
+    compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+
+
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.google.android.gms:play-services-location:11.0.4'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.github.kenglxn.QRGen:android:2.2.0'
+    compile 'com.github.jd-alexander:library:1.1.0'
+    compile 'com.firebase:firebase-client-android:2.3.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.google.firebase:firebase-messaging:9.6.1'
+    compile 'com.google.firebase:firebase-core:9.6.1'
+    compile 'com.google.firebase:firebase-crash:9.6.1'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

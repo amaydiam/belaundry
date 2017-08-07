@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.akabetech.belaundryondemand.view.RoundedImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imvProfilePicSidebar"
+            android:background="@drawable/image_circle"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/icon_profile_map" />
+        <!--<ImageView-->
+            <!--android:id="@+id/takeCameraSidebar"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/image_circle_orange"-->
+            <!--android:layout_alignBottom="@id/imvProfilePicSidebar"-->
+            <!--android:layout_alignEnd="@id/imvProfilePicSidebar"-->
+            <!--/>-->
+        <TextView
+        android:id="@+id/etNameSidebar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:layout_below="@id/imvProfilePicSidebar"
+        android:text="Android Studio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/etLocationSidebar"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etNameSidebar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:text="android.studio@android.com" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profileButton"
+            android:background="#00ffffff"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#34000000"/>
+</LinearLayout>

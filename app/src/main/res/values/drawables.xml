@@ -1,0 +1,6 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_home" type="drawable">@drawable/icon_home_menuslide</item>
+    <item name="ic_menu_active_trans" type="drawable">@drawable/icon_active_trans_sidebar</item>
+    <item name="ic_menu_slideshow" type="drawable">@drawable/icon_history</item>
+    <item name="ic_menu_manage" type="drawable">@drawable/qr_code_icon</item>
+</resources>

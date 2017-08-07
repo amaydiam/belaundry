@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cast_expanded_controller_text_color"
+    tools:context=".main_menu_fragment.home_fragment.ProfileFragment">
+    <com.akabetech.belaundryondemand.framelayout.CutLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_coverprofil" />
+    </com.akabetech.belaundryondemand.framelayout.CutLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/anne"
+        app:civ_border_width="7dp"
+        app:civ_border_color="@color/cast_expanded_controller_ad_container_white_stripe_color"
+        android:layout_marginTop="189dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profileImageView" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageView"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/barcodeButton"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editEmailButton"
+            android:background="#00000000"
+            android:src="@drawable/edit"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/emailTextView"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/passwordTextView"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editProfileButton"
+            android:src="@drawable/edit"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/nameTextView"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/phoneTextView"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/addressTextView"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/barcodeButton"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/barcode"
+        android:background="#00000000"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/takePictureButto"
+        android:src="@drawable/image_circle_orange"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:layout_alignBottom="@+id/profileImageView"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>

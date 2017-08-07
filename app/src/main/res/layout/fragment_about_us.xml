@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fillViewport="true"
+    tools:context=".main_menu_fragment.home_fragment.AboutUsFragment">
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+    <ProgressBar
+        android:id="@+id/pgLoading"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/about_us_logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_apique"
+                android:layout_weight="3"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+
+            <ImageView
+                android:id="@+id/first_star_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:src="@drawable/star"/>
+
+            <ImageView
+                android:id="@+id/second_star_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:adjustViewBounds="true"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/third_star_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:adjustViewBounds="true"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/fourth_star_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:adjustViewBounds="true"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/fifth_star_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star_hole"
+                android:adjustViewBounds="true"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+</ScrollView>

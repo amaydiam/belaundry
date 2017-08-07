@@ -1,0 +1,19 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <!-- general -->
+    <dimen name="activity_margin_content_vertical">50dp</dimen>
+    <dimen name="activity_margin_register_vertical">35dp</dimen>
+    <!-- splash screen -->
+    <dimen name="splash_image_logo_w">350dp</dimen>
+    <dimen name="splash_image_logo_h">350dp</dimen>
+    <dimen name="akabe_image_logo_w">120dp</dimen>
+    <dimen name="akabe_image_logo_h">35dp</dimen>
+    <dimen name="akabe_image_logo_margin_left">15dp</dimen>
+    <dimen name="powered_by_text_size">25sp</dimen>
+    <dimen name="tabs_size">50dp</dimen>
+    <dimen name="note_size">12sp</dimen>
+
+    <dimen name="height_card_rvhome">150dp</dimen>
+    <dimen name="weight_card_rvhome">150dp</dimen>
+</resources>

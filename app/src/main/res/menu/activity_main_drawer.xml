@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grHome" android:checkableBehavior="single">
+        <item
+            android:id="@+id/sideItemHome"
+            android:icon="@drawable/icon_home_menuslide"
+            android:title="Home" />
+     </group>
+    <group android:id="@+id/grAcTrans" android:checkableBehavior="single">
+        <item
+            android:id="@+id/sideItemActiveTrans"
+            android:icon="@drawable/icon_active_trans_sidebar"
+            android:title="Active Transaction" />
+        </group>
+    <group android:id="@+id/grHistTrans" android:checkableBehavior="single">
+        <item
+            android:id="@+id/sideItemHistoryTrans"
+            android:icon="@drawable/icon_history"
+            android:title="History Trancation" />
+        </group>
+    <group android:id="@+id/grQR" android:checkableBehavior="single">
+        <item
+            android:id="@+id/sideItemQRCode"
+            android:icon="@drawable/qr_code_icon"
+            android:title="QR Code" />
+    </group>
+    <group android:id="@+id/grPromo" android:checkableBehavior="single">
+        <item
+            android:id="@+id/sidePromo"
+            android:icon="@drawable/icon_promo_slide"
+            android:title="Promo" />
+    </group>
+
+
+</menu>

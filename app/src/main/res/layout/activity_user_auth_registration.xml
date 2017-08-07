@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.akabetech.belaundryondemand.UserAuthRegistrationActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="@dimen/activity_margin_register_vertical"
+                android:id="@+id/imgLogoRegister"
+                android:layout_width="@dimen/logo_size"
+                android:layout_height="@dimen/logo_size"
+                android:background="@drawable/logoasli"
+                android:layout_centerHorizontal="true"
+                />
+            <LinearLayout
+                android:id="@+id/metaRegister"
+                android:layout_below="@id/imgLogoRegister"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textIcon"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="@string/welcome_text"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textSize="@dimen/welcome_text"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textIcon"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="@string/asli_tag"
+                    />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/activity_margin_content_vertical"
+                android:layout_below="@id/metaRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- username -->
+                <RelativeLayout
+                    android:id="@+id/relUserRegister"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_rounded_drawable_et_holder"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rel_drawable_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_rounded_drawable_left"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/tv_icon_size"
+                            android:layout_height="@dimen/tv_icon_size"
+                            android:background="@drawable/username"/>
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/etEmailRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="12"
+                        android:layout_toRightOf="@+id/rel_drawable_user"
+                        android:background="@null"
+                        android:paddingLeft="10dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:hint="@string/email_hint"
+                        android:textColorHint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignTop="@+id/rel_drawable_user"
+                        android:layout_alignBottom="@+id/rel_drawable_user"/>
+
+                </RelativeLayout>
+                <!-- phone -->
+                <RelativeLayout
+                    android:id="@+id/relPhoneRegister"
+                    android:layout_below="@id/relUserRegister"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_rounded_drawable_et_holder"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/relDrawablePhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_rounded_drawable_left"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/tv_icon_size"
+                            android:layout_height="@dimen/tv_icon_size"
+                            android:background="@drawable/password"/>
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/etPassRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="12"
+                        android:layout_toRightOf="@+id/relDrawablePhone"
+                        android:background="@null"
+                        android:paddingLeft="10dp"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:hint="@string/pass_hint"
+                        android:textColorHint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignTop="@+id/relDrawablePhone"
+                        android:layout_alignBottom="@+id/relDrawablePhone"/>
+
+                </RelativeLayout>
+                <!-- map -->
+                <RelativeLayout
+                    android:id="@+id/relAddressRegister"
+                    android:layout_below="@id/relPhoneRegister"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_rounded_drawable_et_holder"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/relDrawableAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_rounded_drawable_left"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/tv_icon_size"
+                            android:layout_height="@dimen/tv_icon_size"
+                            android:background="@drawable/password"/>
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/etConfPassRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="12"
+                        android:layout_toRightOf="@+id/relDrawableAddress"
+                        android:background="@null"
+                        android:paddingLeft="10dp"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:hint="@string/pass_confirm_hint"
+                        android:textColorHint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignTop="@+id/relDrawableAddress"
+                        android:layout_alignBottom="@+id/relDrawableAddress"/>
+
+                </RelativeLayout>
+                <Button
+                    android:layout_below="@id/relAddressRegister"
+                    android:background="@drawable/rounded_button_login"
+                    android:layout_width="match_parent"
+                    android:text="@string/register_ac_next"
+                    android:id="@+id/btnRegisterNext"
+                    android:textColor="@color/textIcon"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

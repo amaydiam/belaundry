@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_value_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/userImageView"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hario Noviyanto"
+            android:id="@+id/nameTextView" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/first_star_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"/>
+            <ImageView
+                android:id="@+id/second_star_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"/>
+            <ImageView
+                android:id="@+id/third_star_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"/>
+            <ImageView
+                android:id="@+id/fourth_star_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"/>
+            <ImageView
+                android:id="@+id/fifth_star_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star_hole"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus bagus"
+            android:id="@+id/reviewTextView"
+            android:padding="5dp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/profpic_reply"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/reply_review"
+        android:visibility="visible"
+        android:layout_below="@id/ll_value_review"
+        android:layout_alignStart="@+id/ll_value_review"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:layout_below="@+id/ll_value_review"
+        android:layout_toEndOf="@+id/profpic_reply" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/userImageView"
+        android:src="@drawable/prof_pic"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        app:civ_border_overlay="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "714219508395",
+    "firebase_url": "https://be-asli.firebaseio.com",
+    "project_id": "be-asli",
+    "storage_bucket": "be-asli.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714219508395:android:33f2050275d275d1",
+        "android_client_info": {
+          "package_name": "com.akabetech.belaundryondemand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714219508395-no0c4mt3qg29emnl8pmfgj5qpmqop31o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpabCO1WbfyvyV32JxtQ8PdZL0hKtoyv8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

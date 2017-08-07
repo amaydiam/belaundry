@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="62dp"
+            app:srcCompat="@drawable/icon_pickup_map_active"
+            android:id="@+id/courier_icon"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp" />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical"
+            android:background="#3333"
+            android:layout_marginTop="8dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_height="18dp"
+                    app:srcCompat="@drawable/ic_date_mark"
+                    android:id="@+id/date_mark_icon"
+                    android:layout_weight="0.11"
+                    android:layout_width="20dp" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date_mark"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:id="@+id/llTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_height="18dp"
+                        app:srcCompat="@drawable/ic_time_mark"
+                        android:id="@+id/time_mark_icon"
+                        android:layout_width="20dp" />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/time_mark"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/status"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textStyle="normal|bold|italic"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:text="Note."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/note_label"
+                    android:layout_marginTop="6dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/note"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3333"
+        android:id="@+id/imageView5"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

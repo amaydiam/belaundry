@@ -1,0 +1,57 @@
+<resources>
+    <string name="search_hint">search</string>
+    <string name="app_name">Belaundry On-Demand</string>
+    <string name="powered_by">Powered by</string>
+    <string name="login_btn">Let\'s Wash</string>
+    <string name="register_ac_btn">Register</string>
+    <string name="register_ac_next">Next</string>
+    <string name="forgot_password">forgot your password?</string>
+    <string name="register_tag">Don\'t have an account</string>
+    <string name="register_btn">Create One</string>
+    <string name="welcome_text">Laundry Application</string>
+    <string name="asli_tag">online laundry services at your fingertips.</string>
+    <string name="user_hint">E-mail</string>
+    <string name="name_hint">Name</string>
+    <string name="email_hint">your@email.com</string>
+    <string name="phone_hint">Phone </string>
+    <string name="address_hint">address</string>
+    <string name="date_hint">date</string>
+    <string name="hour_hint">hour</string>
+    <string name="detail_hint">your description</string>
+    <string name="city_hint">city</string>
+    <string name="postal_hint">postal code</string>
+    <string name="pass_hint">password</string>
+    <string name="pass_confirm_hint">confirm password</string>
+    <string name="title_activity_chose_store_map">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="choose_store">Choose Store</string>
+    <string name="later_pickup_tagline">simplify your laundry, let the courier handle it!</string>
+    <string name="later_pickup_notes">*additional fee may apply</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non magna nulla. Donec cursus volutpat est, at interdum sapien rutrum sed. Praesent interdum, orci ac rutrum congue, urna urna finibus mi, eget tempor leo quam a quam. Curabitur justo nulla, luctus interdum aliquet eu, pulvinar non sem. Ut venenatis sem magna, sit amet tempus arcu eleifend et. Vivamus nec tellus id odio sollicitudin accumsan. Vivamus mattis ultricies efficitur. Aliquam sit amet tempus turpis. Quisque fermentum urna in nisi sodales, ut suscipit massa venenatis. Morbi sed risus vel nibh cursus rutrum. Vestibulum a tortor eget nulla viverra rhoncus</string>
+
+    <string name="error_blank">%1$s can\'t be blank</string>
+    <string name="error_invalid_format">invalid %1$s format</string>
+    <string name="error_max_length">%1$s can\'t be more than %2$s</string>
+    <string name="error_min_length">%1$s must be more than %2$s</string>
+    <string name="error_compare_equals">%1$s must be same with %2$s</string>
+    <string name="you_do_not_have_any_transaction_history_yet">You do not have any transaction history yet</string>
+    <string name="pickup_history_fail">Unable to get history data.</string>
+    <string name="no_perm_camera">No permission to access camera.</string>
+    <string name="error_change_profile">Unable to change profile data.</string>
+    <string name="ok_change_profile">Profile updated.</string>
+    <string name="update_profile_fail">Unable to update profile picture.</string>
+    <string name="update_profile_ok">Profile picture updated.</string>
+    <string name="media_fail">Can not access selected media.</string>
+    <string name="fail_camera">Unable to start camera app</string>
+    <string name="fail_profile_bad_request">Image file may be too large or unsupported.</string>
+    <string name="add_address_detail">add address detail</string>
+    <string name="no_location_service">Unable to access location service.</string>
+    <string name="title_activity_test">Map</string>
+    <string name="title_activity_place_picker">Map</string>
+</resources>

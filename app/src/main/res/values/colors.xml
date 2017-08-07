@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a69b</color>
+    <color name="colorPrimaryDark">#007D75</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textIcon">#ffff</color>
+    <color name="dialogColor">#d4d0d0</color>
+    <color name="textActive">#26A69A</color>
+    <color name="textNoActive">#939393</color>
+    <color name="loadingColor">#e9ff4302</color>
+    <color name="alphaColor">#00000000</color>
+    <color name="warningColor">#790000</color>
+    <color name="LightGrey">#d3d3d3</color>
+    <color name="White">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="8"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/dialogColor"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dialog_title_padding"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:id="@+id/tvStoreTitleDialog" />
+    </LinearLayout>
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/frameTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        />
+    <FrameLayout
+        android:id="@+id/frameTabContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        />
+</LinearLayout>
